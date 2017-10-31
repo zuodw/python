@@ -92,6 +92,7 @@ print(reduce(lambda x,y:x+y , [1,2,3,4,5,6,7,8,9]))
 f1 = lambda x : x * x
 print(f1(15))
 
+#n装饰器
 print('\n装饰器 decorator\n')
 
 def log(*text):

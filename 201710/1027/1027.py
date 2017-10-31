@@ -6,7 +6,6 @@ import types
 
 from types import MethodType
 
-'''
 class Person(object):
 	def __init__(self, name):
 		self.__name = name
@@ -40,7 +39,7 @@ class Student(Person):
 fanhx = Student(98)
 print(fanhx.getScore())
 
-fanhx.run()
+# fanhx.run()
 
 class Animal(object):
 	def __init__(self):
@@ -148,7 +147,6 @@ print(hasattr(Student, 'score'))
 
 print(Student.__dict__)
 
-'''
 
 class Person(object):
 	pass

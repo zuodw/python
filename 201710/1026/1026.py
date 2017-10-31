@@ -5,8 +5,6 @@ __author__ = 'zuodw'
 
 from PIL import Image
 
-
-'''
 import sys
 
 def test():
@@ -27,7 +25,6 @@ print(im.format, im.size, im.mode)
 im.thumbnail((200,100))
 im.save('thumbnail.jpg', 'JPEG')
 
-'''
 
 print('面向对象编程, 类（class）和实例（instance）')
 
