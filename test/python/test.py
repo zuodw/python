@@ -1,4 +1,5 @@
 #coding: utf-8
+'''
 str = "carplay is enable"
 print(str.title())
 print(str.upper())
@@ -83,8 +84,15 @@ print(fact(5))
 
 #TEST
 def move(n, a, b, c):
+'''
 
-
+class Student(object):
+	def __init__(self, name):
+		self.name = name
+	def __str__(self):
+		return 'Student object (name:%s)' % self.name
+st = Student('zuodw')
+print(st)
 
 	
 	
