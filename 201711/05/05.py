@@ -1,5 +1,7 @@
 #encoding=utf-8
 
+from collections import OrderedDict
+
 class Car(object):
 	def __init__(self, make, model, year):
 		self.make = make
@@ -20,3 +22,14 @@ class EletricCar(Car):
 
 eCar = EletricCar('tesla', 'model s', 2016)
 print(eCar.getCarInfo())
+
+
+
+favorite_language = OrderedDict()
+favorite_language['zuodw'] = 'python'
+favorite_language['fanhx'] = 'ruby'
+favorite_language['sylar'] = 'java'
+favorite_language['peter'] = 'perl'
+
+for key,value in favorite_language.items():
+	print(key, value)
