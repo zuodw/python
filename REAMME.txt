@@ -11,3 +11,5 @@
 	文档测试
 
 django教程：http://djangobook.py3k.cn/2.0/
+
+python进程池剖析 http://www.cnblogs.com/Tour/category/695251.html
