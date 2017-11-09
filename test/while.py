@@ -4,6 +4,7 @@ age_int = 0
 while age_int < 200:
 	age_str = input('Please input your age: ')
 	if age_str == 'quit':
+		print('')
 		break
 	
 	age_int = int(age_str)
