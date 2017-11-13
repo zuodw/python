@@ -1,10 +1,12 @@
 #coding=utf-8
 
-def describe_pet(animal_type, pet_name):
-	if isinstance(animal_type, str):
-		print('str type:', animal_type)
-	elif isinstance(animal_type, int):
-		print('int type:', animal_type)
+from flask import Flask
 
-describe_pet('dog', 'Harry')
-describe_pet(5, 'Harry')
+app = Flask('__name__')
+
+@app.route('/user/<username>')
+def hello_world(username):
+	return 'Hello  %s! % (username)'
+
+if __name__ == '__main__':
+	app.run(debug=True)
