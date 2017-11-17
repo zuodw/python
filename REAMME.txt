@@ -1,4 +1,4 @@
-以下暂时跳过：
+﻿以下暂时跳过：
 
 
 1.	面向对象高级编程
@@ -44,3 +44,5 @@ flask教程	:	http://www.pythondoc.com/flask/tutorial/introduction.html
 python进程池剖析		：	http://www.cnblogs.com/Tour/category/695251.html
 
 Python 常用的标准库以及第三方库有哪些？	：	https://www.zhihu.com/question/20501628
+
+WWW SQL Designer : http://ondras.zarovi.cz/sql/demo/

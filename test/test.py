@@ -2,11 +2,10 @@
 
 from flask import Flask
 
-app = Flask('__name__')
+app = Flask(__name__)
 
-@app.route('/user/<username>')
-def hello_world(username):
-	return 'Hello  %s! % (username)'
+@app.route('/')
+def homePage():
+    return 'homePage'
 
-if __name__ == '__main__':
-	app.run(debug=True)
+app.run()
