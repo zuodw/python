@@ -1,12 +1,31 @@
 #coding=utf-8
 
-from flask import Flask
+class Car(object):
+	def __init__(self, name, price=50):
+		self.name = name
+		self.price = price
+		self.fuel = 0
 
-app = Flask('__name__')
+	def showPrice(self):
+		print(self.price)
 
-@app.route('/user/<username>')
-def hello_world(username):
-	return 'Hello  %s! % (username)'
+	def setPrice(self, price):
+		self.price = price
 
-if __name__ == '__main__':
-	app.run(debug=True)
+	def showName(self):
+		print(self.name.title())
+
+buick = Car('regal')
+
+toyota = Car('camry', 15)
+
+buick.showName()
+print(buick.name)
+buick.name = 'lacross'
+buick.showPrice()
+buick.showName()
+buick.setPrice(30)
+buick.showPrice()
+
+
+toyota.showName()
