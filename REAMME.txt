@@ -34,8 +34,7 @@
 
 
 
-
-
+python 中文学习大本营 ： http://www.pythondoc.com/
 
 django教程	：	http://djangobook.py3k.cn/2.0/
 
