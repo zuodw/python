@@ -53,3 +53,5 @@ postgresql数据库	:	http://www.postgresql.org/download/
 aiohttp doc	：	http://aiohttp.readthedocs.io/en/stable/tutorial.html#aiohttp-tutorial
 
 SQLAlchemy 1.2 Documentation	：	http://docs.sqlalchemy.org/en/latest/orm/tutorial.html
+
+SQL必知必会	：	http://www.java1234.com/a/javaziliao/shuji/2016/0522/6142.html
