@@ -1,27 +1,13 @@
-from tkinter import Tk
-from time import sleep
-import win32com.client as win32
 
-RANGE = range(3,8)
+class UpFooMetaClass(type):
+    def __new__(cls, name, bases, attrs):
+        upperAttr = dict({k.upper(), v} for k, v in attrs.items())
+        return type.__new__(cls, name, bases, upperAttr)
 
-def excel():
-    app = 'Excel'
-    x1 = win32.gencache.EnsureDispatch('%s.Application' % app)
-    ss = x1.Workbooks.Add()
-    sh = ss.ActiveSheet
-    x1.Visible = True
-    sleep(1)
-    sh.Cells(1,1).Value = 'Python-to-%s Demo' % app
-    sleep(1)
 
-    for i in RANGE:
-        sh.Cells(i,1).Value = 'Line %d' % i
-        sleep(1)
-    sh.Cells(i+2, 1).Value = "Th-th-th-that's all folks!"
 
-    ss.Close(False)
-    x1.Application.Quit()
+class Foo(object, metaclass=UpFooMetaClass):
+    name = 'foo'
 
-    if __name__ == '__main__':
-        Tk().withdraw()
-        excel()
+print(hasattr(Foo, 'name'))
+print(hasattr(Foo, 'NAME'))

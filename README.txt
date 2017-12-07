@@ -58,3 +58,7 @@ SQL必知必会	：	http://www.java1234.com/a/javaziliao/shuji/2016/0522/6142.ht
 
 正则表达式相关	：	https://regexr.com/
 				https://regexper.com/
+				
+深刻理解Python中的元类(metaclass)	:	
+	https://www.cnblogs.com/tkqasn/p/6524879.html	
+	http://blog.jobbole.com/21351/	
